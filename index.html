@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de mensagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <img src="imagens/logo-frimesa.png" alt="logo">
+      <form action="processar-dados.php" method="post">
+          <div class="login">
+            <label for="nome">Nome avaliador:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="exemplo@provedor.com" required>
+            <label for="colaborador">Colaborador:</label>
+            <input type="text" name="colaborador" placeholder="Digite o nome do colaborador" required><br>
+            <label for="loja">Loja:</label>
+            <input type="text" name="loja" placeholder="Nome da loja" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" placeholder="Nome da cidade" required>
+          </div>
+      
+      <ul>
+        <li>
+          <label for="criteria1">01 - Colaborador(a) conhece a Missão e Visão da Frimesa?</label>
+              <select id="criteria1" name="criteria1" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+              </select>
+        </li>
+      <li>
+        <label for="criteria2">02 - Está devidamente uniformizado? E limpos?</label>
+        <select id="criteria2" name="criteria2" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria3">03 - Apresentação pessoal, barba feita, unhas curtas e limpas?</label>
+        <select id="criteria3" name="criteria3" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria4">04 - Apresenta todos EPI'S obrigatórios?</label>
+        <select id="criteria4" name="criteria4" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria5">05 - Tem em mãos o Tablóide da loja?</label>
+        <select id="criteria5" name="criteria5" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria6">06 - Cumpre corretamente os horários de trabalho?</label>
+        <select id="criteria6" name="criteria6" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria7">07 - Tem bom relacionamento com encarregado(a) na loja?</label>
+        <select id="criteria7" name="criteria7" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria8">08 - Nossos produtos estão bem abastecidos, precificados e limpos?</label>
+        <select id="criteria8" name="criteria8" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria9">09 - Tem linha de REFRIGERADOS nesta loja?</label>
+        <select id="criteria9" name="criteria9" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+      <li>
+        <label for="criteria10">10 - Os produtos estão seguindo o layout do PLANOGRAMA?</label>
+        <select id="criteria10" name="criteria10" required>
+          <option value="na">N. A</option>
+          <option value="sim">SIM</option>
+          <option value="nao">NÃO</option>
+        </select>
+      </li>
+        <li>
+          <label for="criteria11">11 - Realiza o rodízio de datas, FIFO?</label>
+          <select id="criteria11" name="criteria11" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria12">12 - Temos a linha de FRIOS nesta loja?</label>
+          <select id="criteria12" name="criteria12" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria13">13 - Temos produtos da linha de CONGELADOS?</label>
+          <select id="criteria13" name="criteria13" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria14">14 - Temos produtos da linha de MERCEARIA  nesta loja?</label>
+          <select id="criteria14" name="criteria14" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria15">15 - Temos ACHOCOLATADO LT nesta loja?</label>
+          <select id="criteria15" name="criteria15" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria16">16 - Temos produtos da CARNE SUÍNA nesta loja?</label>
+          <select id="criteria16" name="criteria16" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria17">17 - Temos produtos da linha de CURADOS nesta loja?</label>
+          <select id="criteria17" name="criteria17" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria18">18 - Está atento as RUPTURAS compartilhando com o vendedor?</label>
+          <select id="criteria18" name="criteria18" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria19">19 - Há presença de MPDV em algumas categoria nesta loja?</label>
+          <select id="criteria19" name="criteria19" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li>
+        <li>
+          <label for="criteria20">20 - Temos algum PONTO EXTRA ou DISPLAY da frimesa na loja?</label>
+          <select id="criteria20" name="criteria20" required>
+            <option value="na">N. A</option>
+            <option value="sim">SIM</option>
+            <option value="nao">NÃO</option>
+          </select>
+        </li> 
+      </ul>
+
+      <button type="button" onclick="calculatePerformance()">Calcular Nota</button>
+      
+      <h2>Resultado</h2>
+      <p id="nota"></p>
+      
+
+  <script>
+    function calculatePerformance() {
+      let finalScore = 0;
+
+      // Iterar sobre todas as categorias
+      for (let i = 1; i <= 20; i++) {
+        const criteria = document.getElementById(`criteria${i}`).value;
+        finalScore += calculateScore(criteria);
+      }
+
+      // Exibir o resultado
+      const resultElement = document.getElementById('nota');
+      resultElement.textContent = `Nota Final: ${finalScore.toFixed(2)}`;
+    }
+
+    function calculateScore(option) {
+      switch (option) {
+        case 'na':
+          return 0.50;
+        case 'sim':
+          return 0.50;
+        case 'nao':
+          return 0;
+        default:
+          return 0;
+      }
+    }
+    
+  </script>
+    <input type="text" name="nota" placeholder="Digite a nota" required>
+    <label for="observacoes">Observação:</label>
+    <textarea name="observacoes" rows="5" placeholder="Digite sua observação" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>       
+</body>
+</html>
