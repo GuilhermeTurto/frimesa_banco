@@ -2,7 +2,7 @@
 require_once 'config.php';
 
 $senhaSecreta = "130314";
-if($_SERVER["REQUEST_METHOD"]== "POST"){
+if($_SERVER["REQUEST_METHOD"]== "GET"){
     $senhadigitada = $_POST['senha'];
 
     if($senhadigitada === $senhaSecreta){
@@ -84,7 +84,7 @@ button:hover {
   </style>
 </head>
 <body>
-    <form action="exibicao.php" method="post">
+    <form action="exibicao.php" method="get">
         <label for="senha">Senha:</label>
         <input type="password" name="senha" placeholder="Digite sua senha" required>
         <button type="submit">Enviar</button>

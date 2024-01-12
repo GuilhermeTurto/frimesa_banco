@@ -2,7 +2,7 @@
 require_once 'config.php';
 
 $senhaSecreta = "130314";
-if($_SERVER["REQUEST_METHOD"]== "POST"){
+if($_SERVER["REQUEST_METHOD"]== "GET"){
     $senhadigitada = $_POST['senha'];
 
     if($senhadigitada === $senhaSecreta){
