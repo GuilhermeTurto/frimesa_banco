@@ -18,7 +18,7 @@ $smtp->bind_param("sssssssss",$nome, $email, $colaborador, $loja, $cidade, $nota
 
 //SE EXECUTAR CORRETAMENTE
 if($smtp->execute()){
-  echo "Mensagem enviada com sucesso!";
+  //echo "Mensagem enviada com sucesso!";
 }else{
   echo "Erro no envio da mensagem: ".$smtp->error;
 }

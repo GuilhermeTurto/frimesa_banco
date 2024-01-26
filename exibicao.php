@@ -18,10 +18,10 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 <div class="mensagens">
       <?php if(isset($result) && $result->num_rows >0) : ?>
         <h2 style="text-align:center;">Avaliações concluídas!</h2>
-        <ul>
+        <ul no-repeat>
             <?php while($row = $result->fetch_assoc()) : ?>
               <li>
-                    <strong>Nome: </strong>  <?php echo $row["nome"]; ?><br>
+                    <strong>Avaliador: </strong>  <?php echo $row["nome"]; ?><br>
                     <strong>email: </strong>  <?php echo $row["email"]; ?><br>
                     <strong>Colaborador: </strong>  <?php echo $row["colaborador"]; ?><br>
                     <strong>Loja: </strong>  <?php echo $row["loja"]; ?><br>
@@ -65,8 +65,12 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
           border: none;
       }
 
+      .div {
+        width: 300px;
+      }
+
       input {
-          width: 90%;
+          width: 100vw;
           height: 30px;
           margin-top: 15px;
           margin-bottom: 15px;
@@ -75,7 +79,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
       }
 
       textarea {
-          width: 90%;
+          width: 100vw;
           margin-top: 15px;
           margin-bottom: 15px;
           padding: 10px;
@@ -99,6 +103,7 @@ button:hover {
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-flow: column;
+        width: 700px;
         background: #e6e6e6;
         padding: 20px;
         margin-top: 20px;
