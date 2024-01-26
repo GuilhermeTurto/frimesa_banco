@@ -36,6 +36,6 @@ $conn->close();
   <title>Mensagem enviada!</title>
 </head>
 <body>
-  <h1>Mensagem enviada com sucesso!</h1>
+  <h1>Mensagem enviada com sucesso!!</h1>
 </body>
 </html>
